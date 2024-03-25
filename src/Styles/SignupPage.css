@@ -1,0 +1,336 @@
+.signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.signup-section {
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.signup-side-image {
+    flex: 1;
+    position: relative;
+}
+
+.signup-side-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    filter: grayscale(50%)
+}
+
+.signup-overlay-text {
+    position: absolute;
+    top: 30%;
+    left: 16%;
+    transform: translate(-14%, 10%);
+    text-align: left;
+    color: var(--background-color);
+}
+
+.signup-overlay-text h3 {
+    font-size: var(--sub-title-fs);
+    font-weight: var(--title-fw);
+    font-family: var(--title-ff);
+}
+
+.signup-overlay-text p {
+    font-weight: var(--subtitle-fw);
+    font-size: var(--text-fs);
+    font-family: var(--nav-links-ff);
+    margin-top: 2rem;
+}
+
+.signup-form {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+
+.signup-form h2 {
+    font-family: var(--title-ff);
+    color: var(--secondary-color);
+    font-weight: normal;
+    text-align: center;
+    font-size: var(--sub-title-fs);
+    margin-bottom: 40px;
+}
+
+.signup-form-group {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.signup-form-group label {
+    font-family: var(--nav-links-ff);
+    font-weight: 200;
+    font-size: var(--links-fs);
+    opacity: .7;
+}
+
+.signup-form-group label span {
+    color: var(--secondary-color);
+}
+
+.name-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.lastname-section,
+.firstname-section {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.lastname-section input,
+.firstname-section input {
+    width: 270px;
+    padding: 12px;
+    border-radius: 3px;
+    color: var(--nav-links-color);
+    font-size: var(--links-fs);
+    font-weight: var(--text-fw);
+    font-family: var(--nav-links-ff);
+    margin-top: 5px;
+}
+
+.lastname-section input::placeholder,
+.firstname-section input::placeholder {
+    opacity: 0.6;
+}
+
+.email-section {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.email-section input {
+    padding: 12px;
+    border-radius: 3px;
+    color: var(--nav-links-color);
+    font-size: var(--links-fs);
+    font-weight: var(--text-fw);
+    font-family: var(--nav-links-ff);
+    margin-top: 5px;
+}
+
+
+.phone-number-section {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.pass-confirmation-section input,
+.password-section input,
+.phone-number-section input {
+    padding: 12px;
+    border-radius: 3px;
+    color: var(--nav-links-color);
+    font-size: var(--links-fs);
+    font-weight: var(--text-fw);
+    font-family: var(--nav-links-ff);
+    margin-top: 5px;
+}
+
+.pass-confirmation-section,
+.password-section {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+.show-confirm-pass-section,
+.show-pass-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.show-confirm-pass-section input,
+.show-pass-section input {
+    margin-left: 5px;
+}
+
+.buttons-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.buttons-section button {
+    outline: none;
+    background-color: var(--nav-links-color);
+    color: var(--background-color);
+    font-family: var(--title-ff);
+    padding: 10px;
+    width: 270px;
+    border: 1px solid var(--nav-links-color);
+    transition: .5s;
+    border-radius: 4px;
+    flex: 1;
+}
+
+
+.create-account-with-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-icon {
+    margin-right: 5px;
+}
+
+.buttons-section button:hover {
+    opacity: .7;
+}
+
+.link-to-login {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.link-to-login p {
+    font-family: var(--text-ff);
+
+}
+
+.link-to-login p a {
+    color: var(--secondary-color);
+    font-weight: var(--subtitle-fw);
+    text-decoration: underline;
+    transition: .6s;
+}
+
+.link-to-login p a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .signup-page {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 896px) {
+    .signup-page {
+        margin: 9px;
+    }
+
+    .signup-side-image img {
+        width: 100%;
+    }
+
+    .buttons-section button,
+    .lastname-section input,
+    .firstname-section input {
+        width: 220px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .signup-page {
+        margin: 8px;
+        margin-top: -20px;
+    }
+
+    .signup-side-image {
+        display: none !important;
+    }
+
+    .lastname-section input,
+    .firstname-section input {
+        width: 200px;
+    }
+
+    .buttons-section {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .buttons-section button {
+        flex: 1;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:492px) {
+    .signup-page {
+        margin: 7px;
+    }
+
+    .signup-form {
+        padding: 20px;
+        margin-top: -0px;
+    }
+
+    .lastname-section input,
+    .firstname-section input {
+        width: 170px;
+        padding: 9px;
+    }
+
+    .email-section input,
+    .pass-confirmation-section input,
+    .password-section input,
+    .phone-number-section input {
+        padding: 9px;
+    }
+}
+
+@media (max-width:430px) {
+    .signup-page {
+        margin: 3px;
+    }
+
+    .signup-form {
+        padding: 10px;
+    }
+
+    .signup-form-group label {
+        font-size: var(--nav-links-fs);
+    }
+
+    .lastname-section input,
+    .firstname-section input{
+        width: 140px;
+    }
+
+        .email-section input,
+        .pass-confirmation-section input,
+        .password-section input,
+        .phone-number-section input{
+            padding: 8px;
+        }
+}

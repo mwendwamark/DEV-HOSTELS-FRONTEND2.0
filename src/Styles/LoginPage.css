@@ -1,0 +1,259 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-section {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--nav-links-color);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.login-side-image {
+    flex: 1;
+    position: relative;
+}
+
+.login-side-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    transform: translate(-50%, -0%);
+    text-align: left;
+    color: var(--background-color);
+}
+
+.overlay-text h3 {
+    font-size: var(--sub-title-fs);
+    font-weight: var(--title-fw);
+    font-family: var(--title-ff);
+}
+
+.overlay-text p {
+    font-weight: var(--subtitle-fw);
+    font-size: var(--text-fs);
+    font-family: var(--nav-links-ff);
+    margin-top: 2rem;
+}
+
+.login-form {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.login-form h2 {
+    font-family: var(--title-ff);
+    color: var(--background-color);
+    font-weight: normal;
+    text-align: center;
+    font-size: 22px;
+}
+
+.form-group label {
+    color: var(--background-color);
+    font-family: var(--links-ff);
+    font-size: var(--links-fs);
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: var(--links-fs);
+}
+
+.show-password-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.show-pass-label {
+    color: var(--background-color);
+    font-family: var(--links-ff);
+    margin-right: 5px;
+}
+
+.show-password-toggle {
+    transform: translateY(1px);
+}
+
+.forgot-password-section {
+    display: flex;
+}
+
+.forgot-password-section a {
+    color: var(--secondary-color);
+    font-family: var(--links-ff);
+    margin-right: 5px;
+    transition: 0.3s;
+}
+
+.forgot-password-section a:hover {
+    cursor: pointer;
+    opacity: .6;
+}
+
+.login-btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.no-google-btn {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.google-btn {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.no-google-btn button,
+.google-btn button {
+    padding: 10px;
+    width: 100%;
+    background-color: #e8f0fe;
+    font-size: var(--text-fs);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.no-google-btn button:hover,
+.google-btn button:hover {
+    opacity: 0.7;
+}
+
+.signin-link {
+    margin-top: 20px;
+    text-align: center;
+    font-family: var(--nav-links-ff);
+    font-size: var(--links-fs);
+    color: #e8f0fe;
+}
+
+.signin-link a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.signin-link a:hover {
+    text-decoration: none;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    font-size: var(--links-fs);
+    font-family: var(--links-ff);
+}
+
+@media (max-width: 1024px) {
+    .login-page {
+        margin: 10px
+    }
+
+}
+
+@media (max-width:768px) {
+    .login-page {
+        margin: 12px;
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 17%;
+        left: 35%;
+        transform: translate(-40%, -0%);
+        text-align: left;
+        color: var(--background-color);
+    }
+
+    .overlay-text h3 {
+        font-size: 35px;
+    }
+
+    .login-form {
+        padding: 15px;
+    }
+
+    .login-form h2 {
+        font-size: 19px;
+    }
+
+    .form-group {
+        padding: 9px;
+    }
+
+    .forgot-password-section a,
+    .show-pass-label {
+        font-size: var(--links-fs);
+    }
+}
+
+@media (max-width: 640px) {
+    .login-page {
+        margin: 8px;
+    }
+
+    .form-group label,
+    .show-pass-label,
+    .forgot-password-section a {
+        font-size: 12px;
+    }
+
+    .login-input {
+        padding: 7px;
+    }
+
+    .no-google-btn button,
+    .google-btn button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 540px) {
+    .login-page {
+        margin: 10px;
+    }
+
+    .login-side-image {
+        display: none;
+    }
+
+    .login-form {
+        padding: 16px;
+        width: 500px;
+        /* width: 100% */
+    }
+
+    .show-password-section {
+        display: flex;
+        flex-direction: row;
+    }
+}
