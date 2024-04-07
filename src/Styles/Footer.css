@@ -1,0 +1,105 @@
+.page-footer {
+    filter: grayscale(30%);
+    background-image: linear-gradient(var(--background-color) 10%, var(--secondary-color) 100%);
+    position: absolute;
+    margin-top: 200px !important;
+    height: 300px;
+
+}
+
+.footer-sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 96%;
+    padding: 20px;
+}
+
+.footer-logo-section {
+    max-width: 25%;
+    padding: 10px;
+}
+
+.footer-logo-section .footer-logo-contents .nav-logo {
+    font-size: 30px;
+}
+
+.footer-logo-section .footer-logo-contents p {
+    font-size: var(--links-fs);
+    font-family: var(--links-ff);
+}
+
+.pages-section,
+.help-section,
+.privacy-policy-section {
+    padding: 10px;
+}
+
+.pages-section h3,
+.help-section h3,
+.privacy-policy-section h3,
+.email-and-social-icons-section h3 {
+    color: var(--nav-links-color);
+    font-size: var(--text-fs);
+    font-family: var(--links-ff);
+    margin-bottom: 5px;
+}
+
+.footer-links {
+    color: var(--nav-links-color);
+    cursor: pointer;
+    font-size: var(--nav-links-fs);
+    font-family: var(--links-ff);
+    line-height: 30px;
+    font-weight: var(--sub-title-ff) !important;
+    transition: .9s ease-in-out;
+}
+
+.footer-links:hover {
+    text-decoration: underline;
+}
+
+.email-and-social-icons-section {
+    width: 24%;
+}
+
+
+.input-with-button {
+    width: 100%;
+    position: relative;
+}
+
+.input-with-button input {
+    padding-right: 90px;
+    outline: none;
+    padding: 12px;
+    width: 100%;
+}
+
+.input-with-button button {
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    padding: 8px;
+    background-color: var(--nav-links-color);
+    color: var(--background-color);
+}
+
+.social-icons-section {
+    margin-top: 50px;
+}
+
+
+.social-icons-list a {
+    display: inline-block;    
+    margin-right: 20px;
+    color: var(--nav-link-color);
+    opacity: .7;
+    transition: all 0.5s ease;
+    margin-top: 30px !important;
+}
+
+.social-icons-list a:hover {
+    transform: scale(1.2);
+    color: var(--nav-links-color);
+}
