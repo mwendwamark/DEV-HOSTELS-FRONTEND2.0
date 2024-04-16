@@ -62,11 +62,35 @@
     flex-direction: column;
 }
 
+.home-get-started-btn {
+    margin-top: 40px;
+    width: 28%;
+    padding: 14px;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    border: 2px solid var(--nav-links-color);
+    background-color: var(--nav-links-color);
+    color: var(--background-color);
+    font-size: var(--nav-links-fs);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.home-get-started-btn a {
+    margin-right: 10px;
+    font-size: var(--logo-fs) !important;
+    color: var(--background-color);
+    font-weight: var(--title-fw);
+    font-family: var(--sub-title-ff);
+    transition: 0.5s linear;
+}
+
+
 .introduction-info h2 {
     position: relative;
     display: inline-block;
 }
-
 
 .introduction-info div h2::after {
     content: "";
@@ -78,13 +102,10 @@
     background-color: lightseagreen;
 }
 
-
-
 .introduction-section-image {
     width: 45%;
     margin-top: 10px;
 }
-
 
 .introduction-section-image img {
     width: 100%;
@@ -291,6 +312,105 @@
     filter: grayscale(40%);
 }
 
+.looking-for-hostels-section {
+    margin-top: 100px;
+}
+
+.looking-for-hostels-section h1 {
+    text-align: center;
+    font-size: var(--title-fs);
+    font-weight: var(--title-fw);
+    font-family: var(--title-ff);
+    color: var(--nav-links-color);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* ================= Looking for HOstels Section ================= */
+
+.looking-for-hostels-section h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 120px;
+    width: 28%;
+    height: 2px;
+    /* background-color: white !important; */
+}
+
+.steps-for-looking-for-hostels {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.step-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.step-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.step-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 150px;
+
+}
+
+.step-1 .step-1-contents .step-2 .step-2-contents,
+.step-3 .step-3-contents {
+    width: 45%;
+}
+
+.step-2 .step-2-contents h2,
+.step-3 .step-3-contents h2,
+.step-1 .step-1-contents h2 {
+    font-family: var(--title-ff);
+    font-size: 24px;
+    color: lightseagreen;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.step-3 .step-3-contents,
+.step-2 .step-2-contents,
+.step-1 .step-1-contents p {
+    font-family: var(--links-ff);
+    width: 100%;
+    text-align: center;
+}
+
+.image-settings {
+    width: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+@media (max-width: 2560px) {
+
+    .step-1 .step-1-contents,
+    .step-2 .step-2-contents,
+    .step-3 .step-3-contents {
+        width: 45%;
+    }
+}
+
 @media (max-width:1024px) {
 
     .feature-item {
@@ -300,6 +420,22 @@
     .accomodation-slider {
         max-width: 50%;
     }
+
+    .home-get-started-btn {
+        width: 30%;
+    }
+
+    .step-1 .step-1-contents,
+    .step-2 .step-2-contents,
+    .step-3 .step-3-contents {
+        width: 43%;
+    }
+
+    .image-settings {
+        width: 450px;
+    }
+
+
 }
 
 /* mobile phone view */
@@ -371,4 +507,39 @@
         width: 85%;
         margin-bottom: 2rem;
     }
+
+    .home-get-started-btn {
+        width: 24%;
+    }
+
+    .step-2 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .step-1,
+    .step-3 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .step-1 .step-1-contents,
+    .step-2 .step-2-contents,
+    .step-3 .step-3-contents {
+        width: 70%;
+
+    }
+
+    .step-2 .step-2-contents h2,
+    .step-3 .step-3-contents h2,
+    .step-1 .step-1-contents h2 {
+        margin-bottom: 10px;
+    }
+
+    .looking-for-hostels-section h1::after {
+        display: none;
+    }
+
 }

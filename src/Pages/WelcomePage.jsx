@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import WelcomeImage from "../assets/welcomePageImage.jpg";
+import Search from "../assets/search.png"
+import Booking from "../assets/booking.jpg";
+import Pay from "../assets/payment.jpeg"
 import "../Styles/WelcomePage.css";
 import ScrollReveal from "scrollreveal";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,6 +11,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { FaArrowRight } from "react-icons/fa";
 
 // import images
 import image1 from "../assets/image1.jpg";
@@ -58,33 +63,33 @@ const WelcomePage = () => {
       origin: "right",
     });
     ScrollReveal().reveal(".what-we-offer", {
-      delay: 500,
-      origin: "bottom",
-    });
-    ScrollReveal().reveal(".what-we-offer-header", {
       delay: 600,
       origin: "bottom",
     });
+    // ScrollReveal().reveal(".what-we-offer-header", {
+    //   delay: 600,
+    //   origin: "bottom",
+    // });
 
-    ScrollReveal().reveal(".what-we-offer-header, .accomodation-slider", {
-      delay: 750,
-      origin: "left",
+    // ScrollReveal().reveal(".what-we-offer-header, .accomodation-slider", {
+    //   delay: 750,
+    //   origin: "left",
+    // });
+
+    // ScrollReveal().reveal(
+    //   ".what-we-offer-header, .accomodation-section-contents",
+    //   {
+    //     delay: 800,
+    //     origin: "right",
+    //   }
+    // );
+
+    ScrollReveal().reveal(".feature-item", {
+      delay: 500,
+      origin: "bottom",
+      distance: "200px", // Adjust as needed
+      interval: 100, // Interval between each item
     });
-
-    ScrollReveal().reveal(
-      ".what-we-offer-header, .accomodation-section-contents",
-      {
-        delay: 800,
-        origin: "right",
-      }
-    );
-
-     ScrollReveal().reveal(".feature-item", {
-       delay: 500,
-       origin: "bottom",
-       distance: "200px", // Adjust as needed
-       interval: 100, // Interval between each item
-     });
   }, []);
 
   return (
@@ -122,6 +127,10 @@ const WelcomePage = () => {
                   <h2> 389+</h2>
                   <p>Hosts</p>
                 </div>
+              </div>{" "}
+              <div className="home-get-started-btn">
+                <NavLink to="/login">Get started</NavLink>
+                <FaArrowRight className="arrow-right" />
               </div>
             </div>
             <div className="introduction-section-image">
@@ -290,6 +299,56 @@ const WelcomePage = () => {
                 </div>
                 <div className="cta-button-container">
                   <button className="cta-button">Explore More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="looking-for-hostels-section section container">
+            <h1>Book a hostel of you liking in 3 simple steps!</h1>
+            <div className="steps-for-looking-for-hostels">
+              <div className="step-1">
+                <div className="step-1-contents">
+                  <h2>1. Choose the hostel you like the most.</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus dolores sed cum, commodi incidunt odit adipisci
+                    magni non natus accusantium labore cumque delectus iure
+                    possimus quasi voluptate molestiae.
+                  </p>
+                </div>
+                <div className="step-1-image">
+                  <img src={Search} alt="" className="image-settings" />
+                </div>
+              </div>
+
+              <div className="step-2">
+                <div className="step-2-contents">
+                  <h2>2. Book the chosen hostel</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Modi porro temporibus iusto id aperiam alias at, cumque quas
+                    corporis atque, sit dolore possimus. Delectus ab unde
+                    similique sed?
+                  </p>
+                </div>
+                <div className="step-2-image">
+                  <img src={Booking} alt="" className="image-settings" />
+                </div>
+              </div>
+
+              <div className="step-3">
+                <div className="step-3-contents">
+                  <h2>3. Make necessary payment to secure the hostel</h2>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Fugit quisquam deleniti cupiditate facere eveniet. Alias
+                    dolore inventore, nulla illum repudiandae iste deleniti
+                    ipsum, sapiente aliquam officia ex laborum!
+                  </p>
+                </div>
+                <div className="step-3-image">
+                  <img src={Pay} alt="" className="image-settings" />
                 </div>
               </div>
             </div>
