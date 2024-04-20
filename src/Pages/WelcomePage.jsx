@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import WelcomeImage from "../assets/welcomePageImage.jpg";
 import Search from "../assets/search.png"
 import Booking from "../assets/booking.jpg";
-import Pay from "../assets/payment.jpeg"
+import Pay from "../assets/payment.jpg"
 import "../Styles/WelcomePage.css";
 import ScrollReveal from "scrollreveal";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -66,23 +66,23 @@ const WelcomePage = () => {
       delay: 600,
       origin: "bottom",
     });
-    // ScrollReveal().reveal(".what-we-offer-header", {
-    //   delay: 600,
-    //   origin: "bottom",
-    // });
+    ScrollReveal().reveal(".what-we-offer-header", {
+      delay: 600,
+      origin: "bottom",
+    });
 
-    // ScrollReveal().reveal(".what-we-offer-header, .accomodation-slider", {
-    //   delay: 750,
-    //   origin: "left",
-    // });
+    ScrollReveal().reveal(".what-we-offer-header, .accomodation-slider", {
+      delay: 750,
+      origin: "left",
+    });
 
-    // ScrollReveal().reveal(
-    //   ".what-we-offer-header, .accomodation-section-contents",
-    //   {
-    //     delay: 800,
-    //     origin: "right",
-    //   }
-    // );
+    ScrollReveal().reveal(
+      ".what-we-offer-header, .accomodation-section-contents",
+      {
+        delay: 800,
+        origin: "right",
+      }
+    );
 
     ScrollReveal().reveal(".feature-item", {
       delay: 500,
@@ -138,7 +138,7 @@ const WelcomePage = () => {
             </div>
           </div>
 
-          <div className="what-we-offer container">
+          <div className="what-we-offer container section">
             <div className="what-we-offer-header">
               <h2>What we proudly offer</h2>
             </div>

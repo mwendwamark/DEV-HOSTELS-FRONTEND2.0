@@ -64,11 +64,12 @@
 
 .home-get-started-btn {
     margin-top: 40px;
-    width: 28%;
+    max-width: 50%;
     padding: 14px;
     display: flex;
     flex-direction: center;
     align-items: center;
+    justify-content: space-around;
     border: 2px solid var(--nav-links-color);
     background-color: var(--nav-links-color);
     color: var(--background-color);
@@ -112,7 +113,7 @@
     height: 650px;
     object-fit: cover;
     border-radius: 10px;
-    filter: drop-shadow(10px 7px 10px var(--secondary-color));
+    /* filter: drop-shadow(10px 7px 10px var(--secondary-color)); */
 }
 
 .what-we-offer {
@@ -253,6 +254,10 @@
     display: inline-block;
 }
 
+.feature-lists {
+    display: flex;
+    flex-direction: column;
+}
 .bottom-feature-list,
 .top-feature-list {
     display: flex;
@@ -272,7 +277,7 @@
     border: 1px solid rgba(225, 225, 225, 0.1);
     border-radius: 10px;
     line-height: 20px;
-    width: 380px;
+    width: 30%;
     justify-content: space-between;
 }
 
@@ -411,8 +416,7 @@
     }
 }
 
-@media (max-width:1024px) {
-
+@media (max-widht: 1091px) {
     .feature-item {
         width: 30%;
     }
@@ -421,9 +425,7 @@
         max-width: 50%;
     }
 
-    .home-get-started-btn {
-        width: 30%;
-    }
+
 
     .step-1 .step-1-contents,
     .step-2 .step-2-contents,
@@ -434,8 +436,6 @@
     .image-settings {
         width: 450px;
     }
-
-
 }
 
 /* mobile phone view */
@@ -465,8 +465,18 @@
         object-fit: cover;
     }
 
+    .home-get-started-btn {
+        width: 40%;
+        /* Adjust as needed */
+        font-size: 16px;
+        /* Adjust as needed */
+    }
+
     .what-we-offer {
         margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 768px;
     }
 
     .what-we-offer-header {
@@ -508,9 +518,7 @@
         margin-bottom: 2rem;
     }
 
-    .home-get-started-btn {
-        width: 24%;
-    }
+
 
     .step-2 {
         display: flex;
@@ -541,5 +549,17 @@
     .looking-for-hostels-section h1::after {
         display: none;
     }
+
+    .image-settings {
+        width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-get-started-btn {
+        width: 80%;
+        font-size: 14px;
+    }
+
 
 }

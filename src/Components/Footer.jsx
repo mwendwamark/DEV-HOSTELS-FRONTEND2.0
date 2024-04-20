@@ -112,19 +112,19 @@ const Footer = () => {
             <div className="social-icons-section">
               <h3>Keep in touch with us on social media</h3>
               <div className="social-icons-list">
-                <NavLink to="/linkedin" style={{ fontSize: "30px" }}>
+                <NavLink to="/linkedin" style={{ fontSize: "24px" }}>
                   <FaLinkedin />
                 </NavLink>
-                <NavLink to="/twitter" style={{ fontSize: "30px" }}>
+                <NavLink to="/twitter" style={{ fontSize: "24px" }}>
                   <FaXTwitter />
                 </NavLink>
-                <NavLink to="/facebook" style={{ fontSize: "30px" }}>
+                <NavLink to="/facebook" style={{ fontSize: "24px" }}>
                   <FaFacebook />
                 </NavLink>
-                <NavLink to="/instagram" style={{ fontSize: "30px" }}>
+                <NavLink to="/instagram" style={{ fontSize: "24px" }}>
                   <FaInstagram />
                 </NavLink>
-                <NavLink to="/discord" style={{ fontSize: "30px" }}>
+                <NavLink to="/discord" style={{ fontSize: "24px" }}>
                   <FaDiscord />
                 </NavLink>
               </div>

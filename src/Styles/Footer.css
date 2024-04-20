@@ -1,9 +1,9 @@
 .page-footer {
     filter: grayscale(30%);
     background-image: linear-gradient(var(--background-color) 10%, var(--secondary-color) 100%);
-    position: absolute;
-    margin-top: 200px !important;
-    height: 300px;
+    position: relative;
+    margin-top: 100px !important;
+    /* height: 300px; */
 
 }
 
@@ -11,12 +11,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 96%;
+    flex-wrap: wrap;
+    /* Add flex-wrap to wrap elements in smaller screens */
     padding: 20px;
 }
 
 .footer-logo-section {
-    max-width: 25%;
+    width: 25%;
     padding: 10px;
 }
 
@@ -102,4 +103,26 @@
 .social-icons-list a:hover {
     transform: scale(1.2);
     color: var(--nav-links-color);
+}
+
+/* For screens smaller than 768px (e.g., mobile phones) */
+@media (max-width: 768px) {
+    .footer-sections {
+        flex-direction: column;
+    }
+
+    .footer-logo-section{
+        width: 100%;
+    }
+    .pages-section,
+    .help-section,
+    .privacy-policy-section,
+    .email-and-social-icons-section {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .email-and-social-icons-section {
+        width: 100%;
+    }
 }
